@@ -1,5 +1,4 @@
 import { fetchPostFromApi } from "@/lib/api-service";
-import { getCurrentProjectDomain } from "@/lib/domain-mapper";
 import { notFound } from "next/navigation";
 
 // slug to id 매핑 (기존 데이터 기반)
@@ -34,7 +33,7 @@ export default async function StaticPage({
   if (!id) {
     notFound();
   }
-  const communityUrl = "https://bizaccent.com"; // 하드코딩된 도메인 (pbn-domains.json 기반)
+  const communityUrl = "https://karibagifts.com"; // 하드코딩된 도메인 (pbn-domains.json 기반)
 
   try {
     // API에서 포스트 데이터 가져오기
